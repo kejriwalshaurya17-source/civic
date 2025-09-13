@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center">Track Civic Issues</h2>
+
+<!-- Example tracking table -->
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th>Issue ID</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>Broken streetlight in Sector 12</td>
+            <td>Pending</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Potholes near Ward office</td>
+            <td>In Progress</td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="height: 400px;"></div>
+{% endblock %}
