@@ -7,8 +7,21 @@
   </div>
 </div>
 <div class="row text-center">
-  <div class="col-md-4"><div class="card p-3">📍 Report Local Issues</div></div>
-  <div class="col-md-4"><div class="card p-3">✅ Track Status</div></div>
-  <div class="col-md-4"><div class="card p-3">👥 Ward Member Access</div></div>
+  <div class="col-md-4">
+    <a href="{{ url_for('report') }}" style="text-decoration: none; color: inherit;">
+      <div class="card p-3">📍 Report Local Issues</div>
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="{{ url_for('track') }}" style="text-decoration: none; color: inherit;">
+      <div class="card p-3">✅ Track Status</div>
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="{{ url_for('ward_login') }}" style="text-decoration: none; color: inherit;">
+      <div class="card p-3">👥 Ward Member Access</div>
+    </a>
+  </div>
+
 </div>
 {% endblock %}
